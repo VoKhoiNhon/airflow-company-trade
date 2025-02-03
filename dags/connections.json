@@ -1,0 +1,5 @@
+{
+    "ssh_spark_00": {"conn_type":"ssh","host":"10.0.0.221","login":"root","port":"22","extra":"{\"key_file\":\"/root/.ssh/id_rsa\",\"timeout\":\"120\"}"},
+    "ssh_spark_09": {"conn_type":"ssh","host":"10.0.0.231","login":"root","port":"22","extra":"{\"key_file\":\"/root/.ssh/id_rsa\",\"timeout\":\"120\"}"},
+    "ssh_crawler": {"conn_type":"ssh","host":"158.69.254.5","login":"root","port":"22","extra":"{\"key_file\":\"/root/.ssh/id_rsa\",\"timeout\":\"120\"}"}
+}

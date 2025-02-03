@@ -1,0 +1,10 @@
+openmetadata-ingestion[trino]==1.6.2.1
+openmetadata-ingestion[mysql]==1.6.2.1
+openmetadata-ingestion[postgres]==1.6.2.1
+openmetadata-ingestion[airflow]==1.6.2.1
+openmetadata-ingestion[elasticsearch]==1.6.2.1
+openmetadata-ingestion[hive]==1.6.2.1
+openmetadata-ingestion[deltalake]==1.6.2.1
+openmetadata-ingestion[deltalake-spark]==1.6.2.1
+openmetadata-ingestion[deltalake-storage]==1.6.2.1
+openmetadata-managed-apis==1.6.2.1

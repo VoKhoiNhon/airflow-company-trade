@@ -1,0 +1,12 @@
+{
+    "ssh_spark_00":"ssh_spark_00",
+	"ssh_crawler":"ssh_crawler",
+	"ssh_spark_09":"ssh_spark_09",
+	"newfoundland_and_labrador_payload":"{\"load_date\":\"20250110\",\"dv_source_version\":\"Newfoundland and Labrador-20250110\",\"env\":\"/test_on_s3\", \"spark_driver_memory\":\"4g\", \"spark_executor_memory\":\"4g\", \"spark_executor_cores\":\"4\"}",
+	"entrypoint_cmd":"docker exec $(docker ps | grep 'pyjob:latest' | awk '{print $1}' ) sh -c ",
+	"crawler_entrypoint_cmd":"docker exec $(docker ps | grep 'pycrawl:latest' | awk '{print $1}' ) sh -c ",
+	"bangladesh_payload":"{\"load_date\":\"20241128\",\"dv_source_version\":\"bangladesh_company;20241128\",\"env\":\"/test_on_s3\"}",
+	"data4seo_payload":"{\"load_date\":\"20241205\",\"dv_source_version\":\"dataforseo;20241205\",\"env\":\"/test_on_s3\"}",
+	"sanction_company_payload":"{\"load_date\":\"20250116\",\"dv_source_version\":\"sanction_company;20250116\",\"env\":\"/test_on_s3\",\"use_spark_cluster\":\"ssh_spark_09\"}",
+	"nbd_trade_data_payload":"{\"load_date\":\"20250114\",\"env\":\"/test_on_s3\",\"use_spark_cluster\":\"ssh_spark_09\"}"
+}

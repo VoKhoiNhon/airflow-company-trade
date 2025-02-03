@@ -1,0 +1,18 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0  # frozen: v4.5.0 (Ensures specific version)
+    hooks:
+      - id: trailing-whitespace  # Removes trailing whitespace
+      - id: check-yaml         # Validates YAML syntax
+  - repo: https://github.com/psf/black
+    rev: 22.3.0              # frozen: v22.3.0 (Consider freezing version)
+    hooks:
+      - id: black              # Applies code formatting with black
+        args: [--line-length=88]  # Sets maximum line length to 88 characters
+        language_version: python3  # Specifies target Python version
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.31.0  # Use the latest stable version
+    hooks:
+      - id: yamllint
+        files: \.ya?ml$  # Apply to .yaml and .yml files
+        args: ["--config-data", "{extends: default, rules: {line-length: {max: 120, level: warning}}}"]
